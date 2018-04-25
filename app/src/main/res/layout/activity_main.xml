@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+>
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/et_user_name"
+        android:drawableLeft="@drawable/ic_person_black"
+        android:layout_margin="10dp"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_user_name"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/et_email"
+        android:drawableLeft="@drawable/ic_local_post_office_black"
+        android:layout_margin="10dp"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_about_urs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:hint="@string/et_about_urs"
+        android:drawableLeft="@drawable/ic_sms_black"
+        android:layout_margin="10dp"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_about_urs"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_next"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
